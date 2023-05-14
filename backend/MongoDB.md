@@ -6,13 +6,15 @@
 
 
 # Quick Notes:
-## 1. `db.createCollection(<collection name>`
+## 1. Creation 
+`db.createCollection(<collection name>`
 to create a collection of desired name
 
 
 <br>
 
-## 2. `use <collection name>`
+## 2. Change pointer`
+`use <collection name>`
 to change the current pointer to desired collection
 
 <br>
@@ -45,6 +47,9 @@ sorting in asscending, use `1`, and `-1` for descending.
 ## 6. Limit
 `db.students.find().limit(<number>)`
 Prints the `number` numbers of elements of the collections 
+
+
+<br>
 
 ## 7. Projection
 `dp.students.find({},{name:true})` prints only name
