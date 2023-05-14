@@ -54,3 +54,21 @@ Prints the `number` numbers of elements of the collections
 ## 7. Projection
 `dp.students.find({},{name:true})` prints only name
 `dp.students.find({},{name:true,age:true})` print name and age
+  
+<br>
+  
+  
+## 8. Filter and update
+  `dp.students.updateOne({filter},{update})`
+  `filter` is for finding elemetns
+  `update` update the value of any attribute
+  ### example:
+  `dp.students.updateOne({name:"mujtaba hussain"},{$set:{age:90}})`<br>
+  here `mujtaba hussain` is choosen from the collections and its `age` is changed to 90.
+  
+  <br>
+  
+## 9. Update Many
+  `db.students.updateMany({fulltime:{$exists:false}},{$set:{fulltime:false}})`
+  
+  This code finds all for which `fulltime`  does not exist and then set `fulltime` to false
