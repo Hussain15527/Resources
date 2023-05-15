@@ -72,3 +72,37 @@ Prints the `number` numbers of elements of the collections
   `db.students.updateMany({fulltime:{$exists:false}},{$set:{fulltime:false}})`
   
   This code finds all for which `fulltime`  does not exist and then set `fulltime` to false
+  
+  
+## 10. Delete:
+  `dp.students.deleteOne({name:"sonu"})` <br>
+  delets the any item that as name as `sonu`
+  
+  <br>
+  
+  `dp.students.deleteMany({salary:{$exists:false}})` <br>
+  deletes all the items which does not have salary attribute
+  
+ <br>
+  
+ ## 11. comparrison:
+  `dp.students.find({age:{$lt:20}})` <br>
+  
+  gives all the items whose age is less than 20. <br>
+  
+  ``` 
+  lt : less than
+  lte: less than and equal to
+  gt: greater than
+  gte: greater than and equal to 
+  et: equal to 
+  ne: not equal to
+  ```
+  
+  <br>
+  
+## 12. Index
+  `db.students.createIndex(name:1)` <br>
+  
+  create the index in the asscending order of the namw
+  
